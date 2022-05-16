@@ -1,4 +1,4 @@
-print("========1=======")
+""" print("========1=======")
 class students():
     def __init__(self,name):
         self.name=name
@@ -34,6 +34,27 @@ class animal2(animal1):
         super().__init__(name)
         print(f"{self.name} Is Your Animal And Eat {self.food}")
     
-animal_2=animal2("cat","fish")
-        
-        
+animal_2=animal2("cat","fish") """
+
+""" ##class modifiers ()        
+class circle ():
+    def __init__(self,r=1,name="circle"):
+        self.r=r
+        self.__pi=22/7#private 
+        self._name=name#protected
+    def getpi(self):
+        return self.__pi
+    def area(self):
+        return self.__pi*self.r **2 
+    def perimeter(self):
+        return 2*self.__pi*self.r
+cir_1=circle()
+cir_2=circle(2)
+print(cir_1._name)
+cir_1._name="circle new"
+print(cir_1._name)
+print(cir_1.area())
+print(cir_2.area())
+  """
+
+

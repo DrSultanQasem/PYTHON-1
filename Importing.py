@@ -1,3 +1,4 @@
+####Methods of Importing
 #import (fuction) from (module)
 #from (module) import (function)
 #import (function) as (nick name)

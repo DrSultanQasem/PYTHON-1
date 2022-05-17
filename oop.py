@@ -5,6 +5,7 @@ class welcome:
         print("WELCOME {}".format(name))
 # دى حاجه كده اساسيه بتشتغل بمجرد استدعاء object باسم ال class
 # تقدر تخزن فيها methods و attributes  عادى
+# Any Attributes here called instance attribute
 
 
 # لو حطيط دى __ قبل ال Attribute بيبقى private
@@ -18,10 +19,7 @@ class circle():
         self.__pi = 22/7       # private
         self._name = "Circle"  # protected
         
-        
-        
-        
-            
+     
 # ال set بقا هى method بتعمل set ل attribute معين
 ##SETTER##
 
@@ -46,19 +44,46 @@ class circle():
         return self.area
     def get_primeter(self):
         return self.primeter
-
+### %% client code %% ###
 c = circle()
 
-print(c.get_pi())
-print(c.get_name())
-print(c.set_area())    #return None
-print(c.get_area())
-print(c.set_primeter())#return None
-print(c.get_primeter())
+print("PI IS :",c.get_pi())
+print("Name IS :",c.get_name())
+print("=====>",c.set_area(4))    #return None because it use to set radius
+print("Area Is :",c.get_area())
+print("=====>",c.set_primeter(2))#return None because it use to set radius
+print("Primeter IS  :",c.get_primeter())
+print("******%%%%*****")
+### Puplic & Protected & Private ###
+class A:
+    def __init__(self,x1,x2,x3):
+        self.x1=x1
+        self._x2=x2
+        self.__x3=x3
+    def printx(self):
+        print("Puplic x1 :",self.x1)
+        print("Protected x2 :",self._x2)
+        print("Private x3 :",self.__x3)
+class B(A):
+    def testx(self):
+        print("Puplic x1 :",self.x1)
+        print("Protected x2 :",self._x2)
+#        print("x3 :",self.__x3)
+#it will raise error if you run this line 
+#because x3 is private (only run in own calss)
+### %% client code %% ###
+a=A(1,2,3)
+a.printx()
+print("******===*****")
+b=B(4,5,6)
+b.testx()
 
-###Inheritance###
+
+
+
+""" ###Inheritance###
 #هنا بنورث كل حاجه ف اى class عندك لاى class جديد بمجرد ما تكتب اسم ال class ال عندك فى اقواس ال class الجديد وبس
-print("""##Inheritance##""")
+print(""#Inheritance##"")
 class circle2(circle):
     pass
 
@@ -72,12 +97,6 @@ print(c2.radius)    #return None
 print(c2.get_area())
 print(c2.set_primeter())#return None
 print(c2.primeter)
-
-
-
-
-
-
-
+ """
 
 

@@ -1,8 +1,9 @@
-###constractor###
-class welcome:
-    def __init__(self, name):
-        self.name = name
-        print("WELCOME {}".format(name))
+###constructor###
+class clas:
+    def __init__(self):
+        print("clas starting")
+        """ self.name = name
+        print("WELCOME {}".format(name)) """
 # دى حاجه كده اساسيه بتشتغل بمجرد استدعاء object باسم ال class
 # تقدر تخزن فيها methods و attributes  عادى
 # Any Attributes here called instance attribute
@@ -11,7 +12,23 @@ class welcome:
 # لو حطيط دى __ قبل ال Attribute بيبقى private
 # اما دى _ بيبقى protected
 
+### Destructor ###
+#بيشتغل فى الاخر وهو عكس الكونستراكتور
+    def __del__(self):
+        print("clas destroyed")
 
+    def anythig(self):
+        print("Normal Run any time when you call it")
+def runclass():
+    w=clas()#Run constructor
+    w.anythig()#Run Functions in class 
+    #Destroy clas     (automatic GC)
+    #Run destructor
+runclass()  
+    
+print("==========$$$$$$$$$$$==========")
+    
+    
 class circle():
     ##constractor##
 

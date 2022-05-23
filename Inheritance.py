@@ -50,6 +50,31 @@ s.fname="samy"
 s.lname="atwa"
 print("After Edit  :",s.GetFullNmae())
 
+### Multiple Inheritance ###
+
+class class1():#grand pa
+    def fun1(self):
+        print("class1 fun1")
+class class2(class1):#pa
+    def fun2(self):
+        print("class2 fun2")
+class class3(class2):#child
+    def fun3(self):
+        print("class3 fun3")
+print("class 1")
+c1=class1()
+c1.fun1()
+print("class 2")
+c2=class2()
+c2.fun1()
+c2.fun2()
+print("class 3")
+c3=class3()
+c3.fun1()
+c3.fun2()
+c3.fun3()
+
+
 
 
 

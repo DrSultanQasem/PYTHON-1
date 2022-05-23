@@ -1,4 +1,4 @@
-""" print("========1=======")
+print("========1=======")
 class students():
     def __init__(self,name):
         self.name=name
@@ -55,6 +55,6 @@ cir_1._name="circle new"
 print(cir_1._name)
 print(cir_1.area())
 print(cir_2.area())
-  """
+ 
 
 

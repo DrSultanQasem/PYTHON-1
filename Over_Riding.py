@@ -22,19 +22,19 @@ class SalesMan(worker):
 ### Client _ Code ###
 w=worker(1000)
 print("Worker Salary : ",w.anual_salary())
-s=SalesMan(1000,0.1,100000)
+s=SalesMan(2000,0.1,100000)
 print("SaleMan Salary : ",s.anual_salary())
 print("SaleMan Salary Without Comm : ",s.anual_salary_without_comm())       
 
 ### ISINSTANCE() ##
 ## هنا هنسأل عل الاوبجكت ده هو وارث من ال كلاس ولا لاوبتاخد الاوبجكت ثم الكلاس         
-print(isinstance(w,worker))#TRUE     
+print("isinstance(w,worker) :",isinstance(w,worker))#TRUE     
 #print(isinstance(worker,w))#ERROR
-print(isinstance(s,worker))#TRUE
+print("isinstance(s,worker) :",isinstance(s,worker))#TRUE
 
 ### ISSUBCLASS() ###
 ##هنا بتسأل هل الاول وارث من التانى ولا اى الوضع بالضبط
-print(issubclass(SalesMan,worker))#TRUE
-print(issubclass(worker,SalesMan))#FALSE لان العمال مش وارث انما مورِث
+print("issubclass(SalesMan,worker) : ",issubclass(SalesMan,worker))#TRUE
+print("issubclass(worker,SalesMan) : ",issubclass(worker,SalesMan))#FALSE لان العمال مش وارث انما مورِث
 
 

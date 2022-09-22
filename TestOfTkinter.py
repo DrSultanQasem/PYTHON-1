@@ -1,4 +1,4 @@
-###IMPORTING###
+###IMPORTING####
 from tkinter import *
 from tkinter import colorchooser
 from tkinter import messagebox

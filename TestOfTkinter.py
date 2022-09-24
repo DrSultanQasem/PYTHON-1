@@ -9,6 +9,8 @@ test = Tk()
 test.title("Test APP")
 ####set dimension####
 test.geometry("400x600")
+test.minsize(400,600)
+test.maxsize(400,600)
 
 ####write test label####
 

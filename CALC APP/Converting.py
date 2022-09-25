@@ -1,8 +1,5 @@
 ### MY MAIN FUNCTIONS ###
 
- 
-def fr_bi_to_bi(x):
-    return (x)
 def fr_bi_to_de(x):
     return(int(str(x),2))
 def fr_de_to_bi(x):
@@ -14,7 +11,6 @@ def fr_oc_to_de(x):
 def fr_de_to_hx(x):
     return(hex(x)).replace("0x","")
 
-print("This from binary to binary :",fr_bi_to_bi(101))
 print("This from binary to decimal :",fr_bi_to_de(101))
 print("This from decimal to binary :",fr_de_to_bi(101))
 print("This from decimal to octal :",fr_de_to_oc(101))

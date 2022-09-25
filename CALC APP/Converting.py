@@ -90,6 +90,7 @@ elif f_case == 'H' and s_case == 'D':
     print("This from hexa to decimal :",fr_hx_to_de(101))
 elif f_case == 'H' and s_case == 'O':
     print("This from hexa to octal :",fr_hx_to_oc(101)) 
-
+else :
+    print("please try again \n    $$$ NOTES $$$ \n -You Must Enter Capital Alphabet In HEXA Case\n -You Must Enter Integer Number IN Anoter Cases")
     
     

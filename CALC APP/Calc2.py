@@ -1,5 +1,6 @@
 ### MY MAIN FUNCTIONS ###
 
+ 
 def fr_bi_to_bi(x):
     return (x)
 def fr_bi_to_de(x):
@@ -38,35 +39,21 @@ def fr_bi_to_hx(x):
     x_2=fr_de_to_hx(x_1)
     return(x_2)    
 print("This from binary to hexa :",fr_bi_to_hx(101))
-#################4
+##################4
 def fr_oc_to_hx(x):
     x_1=fr_oc_to_de(x)
     x_2=fr_de_to_hx(x_1)
     return(x_2)
 print("This from octal to hexa :",fr_oc_to_hx(101))
-
-
-
-
-
-
-
-
-
-"""  
-######################################################
-    def fr_hx_to_oc(self):
-        return(oct(self.fr)).replace("0o","OCTAL : ")
-        #note must enter number 0x??? & CAPITAL ELEMNT
-    def fr_hx_to_bi(self):
-        return(bin(self.fr)).replace("0b","BINARY : ")
-        #note must enter number 0x??? & CAPITAL ELEMNT
-    def fr_hx_to_de(self):
-        return(int(self.fr))
-    #note must enter number 0x??? & CAPITAL ELEMNT    
-######################################################  
- """
-
-#print(fr_hx_to_bi())
-#print(fr_hx_to_de())
-#print(fr_hx_to_oc())
+##################5
+def fr_hx_to_bi(x):
+    return(bin(int(str(x),16))).replace("0b","")
+print("This from hexa to binary :",fr_hx_to_bi(101))
+##################6
+def fr_hx_to_de(x):
+    return(int(str(x),16))
+print("This from hexa to decimal :",fr_hx_to_de(101))
+##################7
+def fr_hx_to_oc(x):
+    return(oct(int(str(x),16))).replace("0o","")
+print("This from hexa to octal :",fr_hx_to_oc(101))

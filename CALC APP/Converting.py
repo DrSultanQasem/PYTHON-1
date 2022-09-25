@@ -2,7 +2,7 @@
 
 f_case=input("Convert From B/D/O/H : ")
 s_case=input("Convert To B/D/O/H : ")
-num=int(input("Enter The Number : "))
+num=input("Enter The Number : ")
 
 ########################################################
 

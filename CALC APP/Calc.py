@@ -1,4 +1,3 @@
-
 class convert ():
     global fr 
     def __init__(self,fr,frk,tok):
@@ -36,6 +35,11 @@ class convert ():
         #note must enter number 0x??? & CAPITAL ELEMNT
     
     
+    def fr_de_to_hx(self):
+        return(hex(self.fr)).replace("0x","HEXA : ")
+    def fr_hx_to_de(self):
+        return(int(self.fr))
+    
     
     
     
@@ -50,7 +54,7 @@ q1=convert(0xF,'x','x')
 #print(q1.fr_oc_to_bi())
 #print(q1.fr_bi_to_hx())
 #print(q1.fr_hx_to_bi())
-
-
+#print(q1.fr_de_to_hx())
+#print(q1.fr_hx_to_de())
 
 

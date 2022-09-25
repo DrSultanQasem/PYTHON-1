@@ -46,7 +46,7 @@ def fr_oc_to_hx(x):
     pass
         
 
-#print(q1.fr_oc_to_hx())
+print(fr_oc_to_hx(101))
 """  
    
 ######################################################

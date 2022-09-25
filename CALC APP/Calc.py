@@ -49,7 +49,7 @@ q1=convert(0xF,'x','x')
 #print(q1.fr_bi_to_oc())
 #print(q1.fr_oc_to_bi())
 #print(q1.fr_bi_to_hx())
-print(q1.fr_hx_to_bi())
+#print(q1.fr_hx_to_bi())
 
 
 

@@ -10,7 +10,6 @@ class convert ():
  
     def fr_bi_to_de(self):
         return(int(str(self.fr),2))
-        #self.fr must be string
     def fr_de_to_bi(self):
         return bin(self.fr).replace("0b","BINARY : ")
 

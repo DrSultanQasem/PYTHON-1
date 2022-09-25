@@ -5,13 +5,13 @@ def fr_bi_to_bi(x):
 def fr_bi_to_de(x):
     return(int(str(x),2))
 def fr_de_to_bi(x):
-    return bin(x).replace("0b","BINARY : ")
+    return bin(x).replace("0b","")
 def fr_de_to_oc(x):
-    return(oct(x)).replace("0o","OCTAL : ")
+    return(oct(x)).replace("0o","")
 def fr_oc_to_de(x):
     return(int(str(x),8))    
 def fr_de_to_hx(x):
-    return(hex(x)).replace("0x","HEXA : ")
+    return(hex(x)).replace("0x","")
 
 
 """
@@ -46,7 +46,7 @@ def fr_oc_to_hx(x):
     pass
         
 
- 
+#print(q1.fr_oc_to_hx())
 """  
    
 ######################################################
@@ -62,19 +62,13 @@ def fr_oc_to_hx(x):
 ###################################################### 
  
  """
-#print(q1.fr)
-#print(q1.frk)
-#print(q1.tok)
 
 
 
-#print(q1.fr_hx_to_bi())
+#print(fr_hx_to_bi())
+#print(fr_hx_to_de())
+#print(fr_hx_to_oc())
 
-#print(q1.fr_hx_to_de())
-
-
-#print(q1.fr_hx_to_oc())
-#print(q1.fr_oc_to_hx())
 
 
 

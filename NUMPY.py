@@ -1,4 +1,6 @@
+from turtle import shapesize
 from numpy import *
+import numpy 
 
 
 
@@ -10,7 +12,9 @@ from numpy import *
 
 
 ###create empty matrix
-#print(empty((10,10)))
+# x=empty((10,10))
+# print(x)
+
 
 ###create a matrix with float numbers that it number between twoes numbers and dimintion of this matrix
 # x=random.uniform(1,10,(10,10))
@@ -23,10 +27,10 @@ from numpy import *
 # print(z)
 
 ##create  a matrix with integer items
-#x=random.randint(1,101,100)
-#z=reshape(x,(10,10))
-#print(x)
-#print(z)
+# x=random.randint(1,101,(10,10))
+# z=reshape(x,(10,10))
+# print(x)
+# print(z)
 
 
 ###change sort
@@ -106,6 +110,7 @@ from numpy import *
 # print(x<6)
 # print("_______________")
 # print(x==6)
+# print("_______________")
 
 ### Ask about Difference between Elemnts of two matreces
 
@@ -131,9 +136,9 @@ from numpy import *
 # print(multiply.reduce(x))#columns
 # print(multiply.reduce(z))
 ##multiply each elemnt in all elemnt in it row
-x=arange(9).reshape(3,3)
-print(x)
-print(multiply.outer(x,x))
+# x=arange(9).reshape(3,3)
+# print(x)
+# print(multiply.outer(x,x))
 
 
 
@@ -147,28 +152,72 @@ print(multiply.outer(x,x))
 # print(add.reduce(x))
 # print(sum(x))
 
-a =arange(2,8)
+
+### poly nomial ###
+import numpy as np
 
 
-b = multiply.outer(a,a)
+# Polynomial = np.polynomial.Polynomial
+# X= np.array([0,20,40,60,80,100,120,140,160,180])
+# Y= np.array([10,9,8,7,6,5,4,3,2,1])
 
-print(a)
-print(b)
+# points,stats = Polynomial.fit(X,Y,1,full=True)
 
-
-
-
-
-
-
-
+# print(points)
 
 
 
+# a = poly1d((-7))
+# b = poly1d((-7,2))
+# c = poly1d((-7,2,1))
+# print(a,"\t",a(1))
+# print(b,"\t",b(1))
+# print(c,"\t",c(1))
+#-----------------)
+# b=polyval((-7,2),1)
+# c=polyval((-7,2,1),1)
+
+# print(b)
+# print(c)
+
+
+###drivediv
+# a=poly1d((-7,2,1))
+# b=polyder(a)
+# c=b(3)
+# print(a,"\n-----1-----",b,"\n",c)
 
 
 
-# 01157098509
+#####----------
+# a=poly1d((-7,2,1))
+# b=polyder(a)
+# print(a,"\n-----2-----",b)
+# ### integrition
+# a=polyint(b)
+# print("Integration : ",a)
+
+
+###dates
+# x = datetime64('2015-07-04')
+# y = x + range(50)
+# print(x,"\n-----------",y) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,62 +1,67 @@
-from turtle import shapesize
 from numpy import *
 import numpy 
 
 
 
 ###create A matrix
-# x=array([range(i,i+10) for i in range(1,11)])
-# print(x)
-# z=arange(36).reshape(4,3,3)
-# print(z)
+#x=array([range(i,i+5) for i in range(1,11)])
+#print(x)
+#z=arange(36).reshape(4,3,3)
+#print(z)
 
 
 ###create empty matrix
-# x=empty((10,10))
-# print(x)
+#x=empty((2,5))
+#print(x)
+###create zeros or ones matrix 
+# x=zeros(10)
+# x1=zeros((10,1))
+# x2=zeros((3,10,1))
+# print("11111111",x,"\n2222222\n",x1,"\n33333333\n",x2)
+# z=ones(10)
+# z1=ones((10,1))
+# z2=ones((3,10,1))
+# print("11111111",z,"\n2222222\n",z1,"\n33333333\n",z2)
 
 
 ###create a matrix with float numbers that it number between twoes numbers and dimintion of this matrix
-# x=random.uniform(1,10,(10,10))
+# x=random.uniform(1,2,(10,10))
 # print(x)
 
 ###create a Matrix and it items's value in it is between 0&1 all you need  put a dimintion in random.random(?)
-# x=random.rand(10,10)
+# x=random.rand(5,2)
 # print(x)
-# z=random.random((10,10))
+# z=random.random((5,2))
 # print(z)
 
 ##create  a matrix with integer items
-# x=random.randint(1,101,(10,10))
-# z=reshape(x,(10,10))
+# x=random.randint(1,101,(5,3))
+# z=reshape(x,(3,5))
 # print(x)
 # print(z)
 
 
+"""
 ###change sort
-# x=random.randint(1,101,size=(10,10)) ## == x=random.randint(1,101,(10,10))
-# print(x)
-# y=x.tolist()
-# random.shuffle(y)
-# z=array(y)
-# print(z)
+x=random.randint(1,101,size=(5,3)) ## == x=random.randint(1,101,(10,10))
+print(x)
+y=x.tolist()
+random.shuffle(y)
+z=array(y)
+print(z)
 
-# for x in y:
-#     random.shuffle(x)
-# print(y)
 
-###create zeros or ones matrix 
-# x=zeros(10)
-# x1=zeros((10,10))
-# x2=(zeros((3,10,10)))
-# print("11111111",x,"\n2222222\n",x1,"\n33333333\n",x2)
-# z=ones(10)
-# z1=ones((10,10))
-# z2=ones((3,10,10))
-# print("11111111",z,"\n2222222\n",z1,"\n33333333\n",z2)
+for x in y:
+    random.shuffle(x)
+print(y)
+
+
+ """
+ 
+ 
 
 ### create identity matrix 
-# x=eye(10)
+# x=eye(5)
 # print(x)
 
 ### Create Matrix with only 1 value 
@@ -65,40 +70,33 @@ import numpy
 
 
 ### Create A Matrix of ordered numbers
-# x=linspace(0,100,20).reshape(4,5)
+# x=linspace(1,9,6).reshape(3,2)
 # print(x)
-# ###ممكن بردو تستخدم التجزئة دى فى انك تجزء مصفوفه او داتا عندك
+###ممكن بردو تستخدم التجزئة دى فى انك تجزء مصفوفه او داتا عندك
 
 ### Create Diagonal Matrix 
 # x=diag([x for x in range(1,11)]) 
 # print(x)
 
 ### another way 
-# z=zeros((10,10))
+# z=zeros((5,5))
 # print(z)
-# fill_diagonal(z,[x for x in range(1,11)])
+# fill_diagonal(z,[x for x in range(1,6)])
 # print(z)
-
-### ask about number if none zero items in matrix
-# x = random.randint(0, 10, (3, 3))
-# print(x,'\n-----------')
-# print(count_nonzero(x))#لو سبتها فاضيه هيحسب عدد الارقام ال مش صفر 
-# print(count_nonzero(x<6))#انما لو حطيت شرط بيعد الارقام ال متنفذه الشرط عليها 
-# # اما لو حطيط الاكسيس بيحسبلك الاعداد ال متنفذ عليها شرط او لو سيبتها فاضي بيحسبلك عدد ال مش اصفار لكن فى الصف الواحد يعنى كل صف على حدا 
-# print(count_nonzero(x,axis=1))
-# print(count_nonzero(x<6,axis=1))
 
 
 ### ask about condition in all matrix is in or not
 # x=random.randint(0,10,(3,3))
 # print(x,'\n------------')
-# print(any(x<2))#بقوله هل فى عنصر اصغر من 2 ف المصفوفه ككل
-# print(any(x<2,axis=1))
+# print(any(x<=2))#بقوله هل فى عنصر اصغر من 2 ف المصفوفه ككل
+# print(any(x<=2,axis=1))
 
 ### ask if all elemnts is Condition ??
 # x=arange(1,21).reshape(4,5)
-# print(all(x<20))
-#return True or False
+# print(x)
+# print(all(x<9))
+# print(all(x<9,axis=1))
+##return True or False
 
 
 ### ask about condition 
@@ -112,46 +110,59 @@ import numpy
 # print(x==6)
 # print("_______________")
 
+
+
+""" 
 ### Ask about Difference between Elemnts of two matreces
 
-# x=arange(12).reshape(3,4)
-# z=arange(12).reshape(3,4)
-# a=2*z
-# print(x,"\n-------------\n",a)
-# print(isclose(x,z,rtol=0.1))
-# print(isclose(x,a,rtol=0.1))
+x=arange(12).reshape(3,4)
+z=arange(12).reshape(3,4)
+a=2*z
+print(x,"\n-------------\n",a)
+print(isclose(x,z,rtol=0.1))
+print(isclose(x,a,rtol=0.1))
+ """
+ 
+ 
+"""  
 
 ### Multiply Elements in matreces عنصر ف اخوة 
-# x=arange(25).reshape(5,5)
-# z=arange(25).reshape(5,5)
-# a=multiply(x,z)
-# b=x*z
-# print(a)
-# print(b)
+x=arange(25).reshape(5,5)
+z=arange(25).reshape(5,5)
+a=multiply(x,z)
+b=x*z
+print(a)
+print(b)
+
+
+
 ##multiply elemnts in matrix in each other
-# x =arange(9).reshape(3,3)
-# z =arange(1,9)
-# print(x)
-# print(z)
-# print(multiply.reduce(x))#columns
-# print(multiply.reduce(z))
+x =arange(9).reshape(3,3)
+z =arange(1,9)
+print(x)
+print(z)
+print(multiply.reduce(x))#columns
+print(multiply.reduce(z))
+
+
 ##multiply each elemnt in all elemnt in it row
-# x=arange(9).reshape(3,3)
-# print(x)
-# print(multiply.outer(x,x))
+x=arange(9).reshape(3,3)
+print(x)
+print(multiply.outer(x,x))
 
 
 
 ### power of elemnts in matrices
-# x =arange(5)
-# print(x)
-# print(power(x,2))
-# print(x**2)
+x =arange(5)
+print(x)
+print(power(x,2))
+print(x**2)
 ### Sum elemnts of matrices 
-# x =arange(15)
-# print(add.reduce(x))
-# print(sum(x))
+x =arange(15)
+print(add.reduce(x))
+print(sum(x))
 
+"""
 
 ### poly nomial ###
 import numpy as np
@@ -205,24 +216,7 @@ import numpy as np
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+""" 
 # x=[]
 # for i in range(10):
 #     x.append([])
@@ -233,55 +227,5 @@ import numpy as np
 #             x[i].append(o+1)
 # print(array(x))
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# d=0
-# v=1
-# c=0
-# a=arange(100).reshape(10,10)
-# print(a)
-# b=a.tolist()
-# print(b)
-# while True:    
-#     for x in b:
-#         for i in x:
-#             #print(i)
-#             if x.index(i) == d:
-#                 x[d] = v
-#             elif c == 11:
-#                 break
-#             else:
-#                 pass
-                
-#             d+=1
-#             v+=1
-#             c+=1
-
-# print(b)                    
-
+ """
 

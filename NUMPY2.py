@@ -106,12 +106,22 @@ print(f"my_array_18 \n{my_array_18}")
 print("--------------------------8--------------------------")
 print("-----------------------------------------------------")
 ###$$ OPERATORS & CONDITIONS IN MATRICES $$###
+#this is some of operators can we use as condtions
+#   <   >   =   '"<="'   >=
+my_array_19=np.arange(1,21).reshape(4,5)
+my_array_20=my_array_19<=5  # return matrix of boolean values
+print(f"matrix :\n{my_array_19}\nboolean matrix :\n{my_array_20}")
 
+print("--------------------------9--------------------------")
+# all()  &  any() functions 
+# used to ask about if all elements is (condition)
+# or any of elements have this (condition)
 
+my_array_21=np.random.randint(1,20,(4,5))
+my_array_22=np.all(my_array_21>5,axis=0) # axis=0 is columns
+my_array_23=np.any(my_array_21>5,axis=1) # axis=1 is rows
 
+print(f"matrix is :\n{my_array_21}\n ALL() :\n{my_array_22}\n ANY() :\n{my_array_23}")
 
-
-
-
-
+print("--------------------------10--------------------------")
 

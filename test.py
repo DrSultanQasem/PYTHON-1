@@ -15,7 +15,7 @@ peaks={
     'North_American':'Denali',
     'Pacific':'Mauna Kea',
     'South_American':'Aconcagua'    
-}
+    }
 
 print   (peaks['Pacific'])
 
